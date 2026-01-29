@@ -5,10 +5,10 @@
         public static void CriarNovoAtendimentoFilaOrdenado()
         {
             FilaAtendimento filaAtendimento = new FilaAtendimento();
-            Atendimento atendimento1 = new Atendimento("João", DateTime.Now, Prioridade.Alta);
+            Atendimento atendimento1 = new Atendimento("João", DateTime.Now, Prioridade.Baixa);
             atendimento1.Animal = new Animal("Rex", "Cachorro");
             filaAtendimento.AdicionarAtendimento(atendimento1);
-            Atendimento atendimento2 = new Atendimento("Maria", DateTime.Now.AddMinutes(10), Prioridade.Baixa);
+            Atendimento atendimento2 = new Atendimento("Maria", DateTime.Now.AddMinutes(10), Prioridade.Alta);
             atendimento2.Animal = new Animal("Mimi", "Gato");
             filaAtendimento.AdicionarAtendimento(atendimento2);
             Atendimento atendimento3 = new Atendimento("Sofia", DateTime.Now.AddMinutes(20), Prioridade.Media);
@@ -103,7 +103,8 @@ public enum Prioridade
 {
     Baixa,
     Media,
-    Alta
+    Alta,
+    Urgente
 }
 public class AtendimentoComparer : IComparer<Atendimento>
 {

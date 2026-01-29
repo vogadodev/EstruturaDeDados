@@ -1,0 +1,12 @@
+﻿##O que é um array?##
+De maneira simples podemos dizer que é uma coleção indexada de dados.
+Um array é uma estrutura de dados que armazena um conjunto de dados(elementos) em uma única variável, tornando-os acessíveis por meio de um índice.
+Por que usar arrays?
+Imagine que precisamos armazenar coisas do mesmo tipo, em gavetas diferentes . Podemos criar várias variáveis, uma para cada gaveta, mas isso pode ser ineficiente e difícil de gerenciar. Em vez disso, podemos usar um array, que nos permite armazenar todos esses itens em uma única estrutura organizada.
+
+
+##Memória e Gavetas modulares removíveis##
+Pense na memória do computador como um grande armário cheio de gavetas. Cada gaveta armazena um pedaço de informação. Quando usamos arrays, estamos basicamente organizando essas gavetas de uma maneira que facilita o acesso e a manipulação dos dados.
+Cada gaveta em um array é como uma posição de memória que pode ser acessada usando um índice. O índice começa em 0, o que significa que a primeira gaveta está na posição 0, a segunda na posição 1, e assim por diante.
+Podemos ter array de doces, array de brinquedos, array de números, etc. A declaração de um array envolve especificar o tipo de dados que ele armazenará e o tamanho do array (quantidade de gavetas). A inicialização é o processo de atribuir valores a essas gavetas.
+

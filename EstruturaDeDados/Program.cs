@@ -2,18 +2,24 @@
 using System;
 
 
-//Cap 1 -Entendedo qual a estrutura de dados e sua importância
+
 namespace EstruturaDeDados
 {
     internal class Program
     {
         static void Main(string[] args)
-        {   //Criando uma fila de atendimento para um petshop ordenando sem prioridade
+        {
+            #region CAP1 - INTRODUÇÃO ÀS ESTRUTURAS DE DADOS
+            //Utilizando uma fila de atendimento para um petshop ordenando sem prioridade
             Cap1Pratica.CriarNovoAtendimentoFilaOrdenado();
-            //Criando uma fila de atendimento para um petshop com prioridade
+            //Utilizando uma fila de atendimento para um petshop com prioridade
             Cap1Pratica.CriarNovoAtendimentoFilaPrioritaria();
-            //Utilizando um array não ordenado uma bag(saco)
+            //Utilizando uma fila não ordenada uma bag(saco) para um petshop
             Cap1Pratica.CriarBagAtendimentoNaoOrdenado();
+            #endregion
+
+            #region CAP2 - ARRAYS ESTATICOS
+            #endregion
         }
     }
 }
