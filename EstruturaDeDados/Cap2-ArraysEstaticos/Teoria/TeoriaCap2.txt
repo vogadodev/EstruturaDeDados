@@ -9,4 +9,31 @@ Imagine que precisamos armazenar coisas do mesmo tipo, em gavetas diferentes . P
 Pense na memória do computador como um grande armário cheio de gavetas. Cada gaveta armazena um pedaço de informação. Quando usamos arrays, estamos basicamente organizando essas gavetas de uma maneira que facilita o acesso e a manipulação dos dados.
 Cada gaveta em um array é como uma posição de memória que pode ser acessada usando um índice. O índice começa em 0, o que significa que a primeira gaveta está na posição 0, a segunda na posição 1, e assim por diante.
 Podemos ter array de doces, array de brinquedos, array de números, etc. A declaração de um array envolve especificar o tipo de dados que ele armazenará e o tamanho do array (quantidade de gavetas). A inicialização é o processo de atribuir valores a essas gavetas.
+##Tipos de arrays##
+Arrays podem ser classificados em duas categorias principais: arrays estáticos e arrays dinâmicos.
+###Arrays Estáticos###
+Arrays estáticos têm um tamanho fixo, definido no momento da criação. Isso significa que o número de elementos que o array pode armazenar não pode ser alterado durante a execução do programa. Eles são alocados na memória stack, o que os torna rápidos para acessar, mas limitados em flexibilidade.
+###Arrays Dinâmicos###
+Arrays dinâmicos, por outro lado, podem ter seu tamanho alterado durante a execução do programa. Eles são alocados na memória heap, o que permite maior flexibilidade, mas pode ser mais lento para acessar devido à sobrecarga de gerenciamento de memória.
+##Operações básicas com arrays##
+As operações básicas que podemos realizar com arrays incluem:
+- Acesso: Podemos acessar um elemento específico do array usando seu índice.
+- Inserção: Adicionar um novo elemento ao array (mais comum em arrays dinâmicos).
+- Remoção: Remover um elemento do array (mais comum em arrays dinâmicos).
+- Atualização: Modificar o valor de um elemento existente no array.
+- Iteração: Percorrer todos os elementos do array para realizar alguma operação.
+##Vantagens e Desvantagens dos Arrays##
+###Vantagens###
+- Acesso rápido aos elementos usando índices.
+- Estrutura simples e fácil de entender.
+- Boa para armazenar coleções de dados do mesmo tipo.
+###Desvantagens###
+- Tamanho fixo em arrays estáticos, o que pode levar ao desperdício de memória ou falta de espaço.
+- Inserção e remoção de elementos podem ser ineficientes, especialmente em arrays estáticos.
+- Pode levar a problemas de fragmentação de memória em arrays dinâmicos.
+##Conclusão##
+Arrays são uma estrutura de dados fundamental que nos permite organizar e gerenciar coleções de dados de maneira eficiente. Compreender como funcionam os arrays, suas vantagens e desvantagens, é essencial para qualquer programador que deseja escrever código eficiente e eficaz.
+Em C# é possível redimensionar um array usando Array.Resize, mas isso é custoso para a memória do computador (ele cria um novo array e copia tudo) e não é recomendado para adições frequentes
+pois arrays comuns e estáticos não são feitos para isso. Para esse tipo de operação, o ideal é usar listas (List<T>) que são dinâmicas e otimizadas para esse tipo de operação.
+E arrays comuns não possuem métodos nativos para remoção(Remove) ou inserção(Add) ambos em C# de elementos, diferente das listas.
 

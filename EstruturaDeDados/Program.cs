@@ -1,4 +1,5 @@
 ﻿using EstruturaDeDados.Cap1_Intro.Pratica;
+using EstruturaDeDados.Cap2_ArraysEstaticos.Pratica;
 using System;
 
 
@@ -19,6 +20,12 @@ namespace EstruturaDeDados
             #endregion
 
             #region CAP2 - ARRAYS ESTATICOS
+            //Definindo arrays simples
+            //Criamos arrays simples de tipos primitivos e tipos personalizados
+            //como Pessoa e Chocolate
+            Cap2Pratica.DefinirArraySimples();
+           
+
             #endregion
         }
     }
