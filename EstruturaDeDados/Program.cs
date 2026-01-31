@@ -24,7 +24,10 @@ namespace EstruturaDeDados
             //Criamos arrays simples de tipos primitivos e tipos personalizados
             //como Pessoa e Chocolate
             Cap2Pratica.DefinirArraySimples();
-           
+            //Métodos com Arrays estáticos
+            Cap2Pratica.NumerosMaisRepetidos();
+            Cap2Pratica.NumeroRepetidoUtilizandoDictionary();
+
 
             #endregion
         }

@@ -39,6 +39,50 @@
             {
                 Console.WriteLine(chocolate.ToString());
             }
+            var arrayTeste = new int[5];
+            Console.WriteLine("""Mesmo não tendo definido "nada" pois os valores serão '0' no array estático, ele vai reservar o espaço na memória""");
+            foreach(var item in arrayTeste)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine($"Tamanho do arrayTeste: {arrayTeste.Count()}");
+        }
+
+        public static void NumerosMaisRepetidos()
+        {
+           int[] arrayExemplo = { 1, 2, 3, 4, 5, 1, 2, 1, 3, 4, 1 };
+           int numeroMaisRepetido = arrayExemplo
+                .GroupBy(n => n)
+                .OrderByDescending(g => g.Count())
+                .First()
+                .Key;
+            Console.WriteLine("Número mais repetido: " + numeroMaisRepetido);
+        }
+                
+        public static void NumeroRepetidoUtilizandoDictionary()
+        {
+            var arrayNumeros = new[] {1,1,1,2,2,2,3,3,4,5,5,5,5,5,9,9,9,8,8, };
+            var contadorNumeros = new Dictionary<int, int>();
+            int numeroMaisRepetido = arrayNumeros[0];
+            int maxRepeticoes = 0;
+
+            foreach(var numero in arrayNumeros)
+            {
+                if(contadorNumeros.ContainsKey(numero))
+                {
+                    contadorNumeros[numero]++;
+                }
+                else
+                {
+                    contadorNumeros[numero] = 1;
+                }
+                if(contadorNumeros[numero] > maxRepeticoes)
+                {
+                    maxRepeticoes = contadorNumeros[numero];
+                    numeroMaisRepetido = numero;
+                }
+            }
+            Console.WriteLine("Array vazio criado com tamanho: " + numeroMaisRepetido);
         }
     }
 
